@@ -30,3 +30,8 @@ This project generates a `team.html` page in the `output` directory, that displa
 
   * Role-specific property (School, link to GitHub profile, or office number)
 
+![p1](https://user-images.githubusercontent.com/54878075/90731525-cd44d200-e297-11ea-9f03-a16117978a37.png)
+![p3](https://user-images.githubusercontent.com/54878075/90731568-d766d080-e297-11ea-815d-561ea096a73d.png)
+![p4](https://user-images.githubusercontent.com/54878075/90731571-d9309400-e297-11ea-819e-01d77f778e24.png)
+![p5](https://user-images.githubusercontent.com/54878075/90731578-db92ee00-e297-11ea-92fd-0bddd050dd00.png)
+![p6](https://user-images.githubusercontent.com/54878075/90731585-dd5cb180-e297-11ea-9afb-426d14d463bd.png)
