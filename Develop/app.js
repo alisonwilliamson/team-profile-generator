@@ -94,3 +94,40 @@ const internQuestions = [
     }
 ]
 
+// function to prompt user to choose an employee type
+function createTeam() {
+    inquirer.prompt(employeeType)
+    .then(response => {
+        switch(response.employeeType) {
+            case "Manager":
+                newManager();
+                break;
+            case "Engineer":
+                newEngineer();
+                break;
+            case "Intern":
+                newIntern();
+                break;
+            default:
+                buildTeam();
+                break;
+        }
+    })
+}
+
+
+const newManager = () => {
+
+}
+
+const newEngineer = () => {
+
+}
+
+const newIntern = () => {
+
+}
+
+function buildTeam() {
+
+}
