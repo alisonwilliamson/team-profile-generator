@@ -31,13 +31,13 @@ const managerQuestions = [
     },  
     { 
         type: "input", 
-        name: "id", 
-        message: "What is the manager's ID?" 
+        name: "email", 
+        message: "What is the manager's email?"
     },
     { 
         type: "input", 
-        name: "email", 
-        message: "What is the manager's email?"
+        name: "id", 
+        message: "What is the manager's ID?" 
     }, 
     { 
         type:"input", 
@@ -145,6 +145,12 @@ const newIntern = () => {
     });
 }
 
+// saves user input data to output foler and html page
 function buildTeam() {
-
+    if (!fs.existsSync(OUTPUT_DIR)) {
+        fs.mkdirSync(OUTPUT_DIR)
+    }
+    fs.writeFileSync(outputPath, render(teamMembers), "utf-8")
 }
+
+createTeam();
