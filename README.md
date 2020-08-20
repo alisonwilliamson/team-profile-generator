@@ -26,7 +26,7 @@ How do you deliver this? Here are some guidelines:
 
 In the `Develop` folder, there is a `package.json`, so make sure to `npm install`.
 
-The dependencies are, [jest]( ) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
+The dependencies are, [jest]( ru) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
 
 There are also unit tests to help you build the classes necessary.
 
