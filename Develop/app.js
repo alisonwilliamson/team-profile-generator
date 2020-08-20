@@ -117,7 +117,12 @@ function createTeam() {
 
 
 const newManager = () => {
-
+    inquirer.prompt(managerQuestions) 
+    .then(response => {
+        const manager = new Manager(response.name, response.email, response.id, response.officeNumber)
+        teamMembers.push(manager)
+        createTeam();
+    })
 }
 
 const newEngineer = () => {
