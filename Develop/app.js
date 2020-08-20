@@ -115,7 +115,7 @@ function createTeam() {
     })
 }
 
-
+// prompts manager questions and gets user response
 const newManager = () => {
     inquirer.prompt(managerQuestions) 
     .then(response => {
@@ -125,12 +125,24 @@ const newManager = () => {
     })
 }
 
+// prompts new engineer questions and gets user response
 const newEngineer = () => {
-
+    inquirer.prompt(engineerQuestions)
+    .then(response => {
+        const engineer = new Engineer(response.name, response.email, response.id, response.github)
+        teamMembers.push(engineer)
+        createTeam();
+    });
 }
 
+// prompts new intern questions and gets user response
 const newIntern = () => {
-
+    inquirer.prompt(internQuestions)
+    .then(response => {
+        const intern = new Intern(response.name, response.email, response.id, response.schoolName)
+        teamMembers.push(intern)
+        createTeam();
+    });
 }
 
 function buildTeam() {
